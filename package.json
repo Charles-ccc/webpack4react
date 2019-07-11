@@ -19,7 +19,11 @@
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
     "style-loader": "^0.23.1",
+    "sass": "^1.17.3",
+    "sass-loader": "^7.1.0",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2",
@@ -27,7 +31,6 @@
   },
   "dependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "sass-loader": "^7.1.0"
+    "react-dom": "^16.8.6"
   }
 }
