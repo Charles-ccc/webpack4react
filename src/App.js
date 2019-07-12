@@ -6,7 +6,7 @@ class App extends React.Component {
       <div>
         <h1>Hello React & Webpack!</h1>
         <ul>
-          {['a', 'b', 'c'].map(name => (
+          {['WestBrook', 'Harden', 'James'].map(name => (
             <li>{`I'm ${name}!`}</li>
           ))}
         </ul>
