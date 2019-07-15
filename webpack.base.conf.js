@@ -11,22 +11,30 @@ module.exports = {
     // filename用来指定输出文件的名称
     // [name]表示占位符，用文件的名称来命名
     filename: '[name].js',
-    path: path.resolve(__dirname, '/dist')
+    path: path.join(__dirname, '/dist')
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js']
   },
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: '../'
-            }
-          },
-          'css-loader'
-        ]
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        loader: 'awesome-typescript-loader'
       },
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //     {
+      //       loader: MiniCssExtractPlugin.loader,
+      //       options: {
+      //         publicPath: '../'
+      //       }
+      //     },
+      //     'css-loader'
+      //   ]
+      // },
       {
         test: /\.scss$/,
         use: [
@@ -39,22 +47,22 @@ module.exports = {
           }
         ]
       },
-      {
-        test: /\.(js|jsx|ts|tsx)$/,
-        use: 'babel-loader?cacheDirectory',
-        // 排除文件，缩小命中范围
-        exclude: /node_modules/,
-        include: path.resolve(__dirname, 'src')
-      },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {}
-          }
-        ]
-      }
+      // {
+      //   test: /\.js$/,
+      //   use: 'babel-loader?cacheDirectory',
+      //   // 排除文件，缩小命中范围
+      //   exclude: /node_modules/,
+      //   include: path.resolve(__dirname, 'src')
+      // },
+      // {
+      //   test: /\.(png|jpg|gif)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {}
+      //     }
+      //   ]
+      // }
     ]
   },
   plugins: [

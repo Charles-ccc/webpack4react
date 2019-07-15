@@ -27,7 +27,6 @@
     "sass": "^1.17.3",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "ts-loader": "^6.0.4",
     "typescript": "^3.5.3",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5",
@@ -35,6 +34,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "awesome-typescript-loader": "^5.2.1",
     "file-loader": "^4.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
