@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": ["es7", "dom"],
+    "target": "es6",
+    "allowSyntheticDefaultImports": true  
+  },
+  "compileOnSave": false,
+  "exclude": ["**/node_modules/**", "**/dist/**", "build/**"],
+  "include": ["**/*.tsx", "**/*.ts", "global.d.ts"],
+  
+}

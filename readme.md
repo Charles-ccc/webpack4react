@@ -1,13 +1,13 @@
 ### 各配置项的用处
 
-1. babel-polyfill babel-plugin-transform-runtime 解决浏览器兼容性问题
-2. css-loader style-loader  编译CSS
-3. postcss-loader 自动添加前缀，需新建 `postcss.config.js` 配置
-4. mini-css-extract-plugin 抽取CSS到独立文件
-5. html-webpack-plugin 复制并压缩Html文件
-6. clean-webpack-plugin 打包前清理源目录文件，自动判断哪些不需要就删除
-7. file-loader 静态资源处理
-8. webpack-dev-server development模式下启动服务器并实时刷新
+1. `babel-polyfill babel-plugin-transform-runtime` 解决浏览器兼容性问题
+2. `css-loader style-loader`  编译CSS
+3. `postcss-loader` 自动添加前缀，需新建 `postcss.config.js` 配置
+4. `mini-css-extract-plugin` 抽取CSS到独立文件
+5. `html-webpack-plugin` 复制并压缩Html文件
+6. `clean-webpack-plugin` 打包前清理源目录文件，自动判断哪些不需要就删除
+7. `file-loader` 静态资源处理
+8. `webpack-dev-server` development模式下启动服务器并实时刷新
 
 ### Notes
 1. path.join():方法使用平台特定的分隔符把全部给定的 path 片段连接到一起，并规范化生成的路径
