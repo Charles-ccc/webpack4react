@@ -37,6 +37,8 @@
     "awesome-typescript-loader": "^5.2.1",
     "file-loader": "^4.0.0",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^5.0.1",
+    "normalize.css": "^8.0.1"
   }
 }
